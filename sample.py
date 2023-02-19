@@ -19,8 +19,8 @@ signal_lenghts = [2**10, 2**11, 2**12, 2**13, 2**14]
 trial_count = 5000
 
 for signal_length in signal_lenghts:
-    true_frequency = int(signal_length / 4)
+    frequency = int(signal_length / 4)
 
-    computation_time = perform_sin_fft(signal_length, true_frequency, trial_count)
+    computation_time = perform_sin_fft(signal_length, frequency, trial_count)
 
     print("Signal length {}, Computation time {:.3f} s".format(signal_length, computation_time))
